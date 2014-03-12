@@ -1,14 +1,103 @@
-<!DOCTYPE html>
 <html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
 <head>
-  <title>FramgiaJobs</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Framgia Jobs</title>
+  <meta name="description" content="From Asia To the World">
+  <meta name="keywords" content="PHP, Ruby ">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link rel="canonical" href="jobs.html"/>
+  <link rel="shortcut icon" href="../assets.Framgia.com/production/assets/favicon-36a0e5df021b247a23c073e922ee76d2.png">
+  <link rel="apple-touch-icon" href="../assets.Framgia.com/production/assets/apple-touch-icon-38fe2e51027979e8c7034635f5dabeca.png" content="Framgia" />
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0" />
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "../connect.facebook.net/ja_JP/all.js#xfbml=1&appId=323785684366365";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <script type="text/javascript">try { var lb = new Vesicomyid.Bivalves("119760"); lb.init(); } catch(err) {} </script>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try{
+      var pageTracker = _gat._getTracker("UA-30083345-1");
+      pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30083345-1']);
+  //  _gaq.push(['_setDomainName', 'Framgia.com']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <style>
+  @font-face {
+    font-family: 'UTM HelveIns';
+    src:asset-url(UTMHelvetIns.ttf);
+  }
+  </style>
 </head>
-<body>
+<div id="header" class="hidden-phone">
+  <div class="header-inner">
+    <h1 id="img-logo-box">
+    <a href="jobs.html"><img border="0" id="img-logo-box" src="/assets/logo_framgia.png" /></a>
+    </h1>
+    <div id="gnav-box">
+      <div class="header-btn-box">
+        <a href="new.html" class="btn btn-primary btn-alt ga-top-linkto-signup">Đăng Ký</a>
+      </div>
+      <div class="header-menu-box hidden-phone">
+        <a href="jobs.html#header-image-box" class="scroll">Lời Ngỏ</a>
+        <a href="jobs.html#jobs-culture-container" class="scroll">Văn Hóa</a>
+        <a href="jobs.html#jobs-team-container" class="scroll">Team</a>
+        <a href="jobs.html#jobs-positions-container" class="scroll">Công Việc</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MENU MOBILE -->
+<div class="navbar navbar-fixed-top visible-phone" id="navbar-mobile">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" DATA-TOGGLE="collapse" DATA-TARGET=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a href="index.html" class="logo-box-small"></a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="jobs.html#header-image-box" class="scroll">Lời Ngỏ</a></li>
+          <li><a href="jobs.html#jobs-culture-container" class="scroll">Văn Hóa</a></li>
+          <li><a href="jobs.html#jobs-team-container" class="scroll">Team</a></li>
+          <li><a href="jobs.html#jobs-positions-container" class="scroll">Công Việc</a></li>
+        </ul>
+      </div>
+      <!-- /.nav-collapse --> 
+    </div>
+    <!-- /.container --> 
+  </div>
+  <!-- /.navbar-inner --> 
+</div>
+<body DATA-SPY="scroll" DATA-TARGET="#navbar">
 
 <%= yield %>
-
+<div id="footer">
+  <div id="footer-inner"> 
+    <hr style="margin-top:0;"/>
+    <p class="pagination-centered">Framgia Viet Nam Co.,Ltd<br>
+9F VietA building, Duy Tan street, Cau Giay district, Hanoi, Vietnam </p>
+    <p class="pagination-centered">© 2014 Framgia, Inc. All rights reserved.</p>
+  </div>
+</div>
 </body>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 </html>
