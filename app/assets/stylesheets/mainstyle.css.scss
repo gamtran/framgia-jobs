@@ -11325,6 +11325,10 @@ i.icon-plus.center {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'UTM HelveIns';
+    src:font-url("/assets/utm.ttf") format('truetype');
+  }
 
 [class^="icon-"], [class*=" icon-"] {
     font-family: FontAwesome;
