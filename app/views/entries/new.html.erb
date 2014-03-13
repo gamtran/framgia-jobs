@@ -1,0 +1,67 @@
+<div id="page-jobs-apply">
+  <div class="container small">
+    <%= link_to "←Quay lại", root_path, class: "jobs-back-link" %>
+    <hr class="margin-small-white" />
+    <h3>Entry</h3>
+    <p>Mẫu đăng ký dưới đây phần đánh dấu * bắt buộc điền</p>
+    <hr />
+    <div class="jobs_wrap" id="job-table-box">
+      <%= form_for @entry, html: {class: "form-horizontal", id: "new_job"} do |f|  %>
+        <fieldset>
+          <div class="control-group">
+            <label class="control-label">Họ Tên*</label>
+            <div class="controls">
+              <%= f.text_field :name, size: 30 %>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">EMail*</label>
+            <div class="controls">
+              <%= f.text_field :email, size: 30, placeholder: "you@example.com" %>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Công Việc*</label>
+            <div class="controls">
+              <%= f.select :m_job_id, M::Job.all.map{|job| [job.name, job.id]} %>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Github ID</label>
+            <div class="controls">
+              <%= f.text_field :github_id, size: 30, placeholder: "@sample" %>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Giới thiệu bản thân</label>
+            <div class="controls">
+              <%= f.text_area :self_pr, cols: 60, rows: 10 %>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Thông tin khác</label>
+            <div class="controls">
+              <%= f.text_area :other_information, cols: 60, rows: 10, placeholder: "Thông tin về công việc cũ, kinh nghiệm làm việc..." %>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="controls">
+              <%= button_tag "Gửi", class: "btn btn-primary btn-alt btn-large ga-track-link", style: "font-weight:bold;", "ga-label" => "jobs form apply" %>
+              <br />
+              <small>Chúng tôi sẽ trả lời ngay sau khi nhận được mẫu đăng ký của bạn.</small>
+            </div>
+            <p>
+            </p>
+          </div>
+        </fieldset>
+      <% end %>
+    </div>
+  </div>
+  <hr class="margin-middle-white" />
+</div>

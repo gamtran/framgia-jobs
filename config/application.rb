@@ -21,5 +21,8 @@ module FramgiaJobs
     # config.i18n.default_locale = :de
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
     config.assets.precompile += %w( .svg .eot .woff .ttf .html )
+    config.to_prepare do
+      Devise::SessionsController.layout "admin_layout"
+    end
   end
 end
