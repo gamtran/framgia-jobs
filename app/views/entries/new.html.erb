@@ -16,7 +16,7 @@
           </div>
 
           <div class="control-group">
-            <label class="control-label">EMail*</label>
+            <label class="control-label">Email*</label>
             <div class="controls">
               <%= f.text_field :email, size: 30, placeholder: "you@example.com" %>
             </div>
@@ -47,6 +47,14 @@
             <label class="control-label">Thông tin khác</label>
             <div class="controls">
               <%= f.text_area :other_information, cols: 60, rows: 10, placeholder: "Thông tin về công việc cũ, kinh nghiệm làm việc..." %>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">CV</label>
+            <div class="controls">
+              <%= f.file_field :cv %>
+              <%= f.hidden_field :cv_cache %>
             </div>
           </div>
 
