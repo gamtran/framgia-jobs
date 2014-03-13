@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require "csv_importer"
+M::Job.destroy_all
+MasterImporter::CSVImporter.new(M::Job).execute
+PASSWORD = "12345678"
+Admin.destroy_all
+Admin.create! id: 1, email: "job@framgia.com", password: PASSWORD,
+  password_confirmation: PASSWORD
