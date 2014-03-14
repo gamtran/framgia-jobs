@@ -5,7 +5,6 @@ class EntriesController < ApplicationController
   end
 
   def create
-    @entry.attributes = entry_params
     if @entry.save
       redirect_to root_path
     else
@@ -17,6 +16,7 @@ class EntriesController < ApplicationController
 
   def build_object
     @entry = Entry.new
+    @entry.attributes = entry_params if params[:entry]
   end
 
   def entry_params
