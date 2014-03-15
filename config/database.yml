@@ -20,7 +20,7 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: framgia-jobs_development
+  database: framgia-jobs_test
   pool: 5
   username: root
   password: "123456"
@@ -30,8 +30,8 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: framgia-jobs_development
+  database: framgia-jobs
   pool: 5
   username: root
-  password: "123456"
+  password: <%=ENV["FRAMGIA_JOBS_DB_PASSWORD"]%>
   socket: /var/run/mysqld/mysqld.sock
