@@ -8,6 +8,7 @@ gem "mysql2"
 gem "devise"
 gem "carrierwave"
 gem "mini_magick"
+gem "rails_config"
 
 # Use SCSS for stylesheets
 gem "sass-rails", "~> 4.0.0"
