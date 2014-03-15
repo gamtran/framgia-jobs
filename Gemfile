@@ -9,6 +9,8 @@ gem "devise"
 gem "carrierwave"
 gem "mini_magick"
 gem "rails_config"
+gem "execjs"
+gem "therubyracer"
 
 # Use SCSS for stylesheets
 gem "sass-rails", "~> 4.0.0"
