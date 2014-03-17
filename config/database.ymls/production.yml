@@ -6,4 +6,4 @@ production:
   pool: 5
   username: root
   password: <%=ENV["FRAMGIA_JOBS_DB_PASSWORD"]%>
-  socket: /var/run/mysqld/mysqld.sock
+  host: localhost
