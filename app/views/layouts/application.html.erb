@@ -1,0 +1,132 @@
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Framgia Việt Nam Tuyển Dụng | Công ty IT Nhật Bản tại Hà Nội</title>
+  <meta property="og:image" content="http://recruit.framgia.vn<%= image_path 'ogp_framgia.png' %>"/>
+  <meta name="description" content="Làm việc tại Hà Nội, onsite Nhật Bản, Framgia tuyển dụng các vị trí lập trình viên Android, PHP, iOS, BrSE, QA/Tester...">
+  <meta name="keywords" content="tuyển dụng developer, tuyển lập trình viên, kỹ sư IT">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <style>
+  .new_position {
+  text-align:center;
+  font-family:Helvetica,sans-serif;
+  padding-top:20px;
+  -webkit-animation-fill-mode:both;
+  -moz-animation-fill-mode:both;
+  -o-animation-fill-mode:both;
+  animation-fill-mode:both;
+
+  -webkit-animation:blink 1s infinite;
+  -moz-animation:blink 1s infinite;
+  -o-animation:blink 1s infinite;
+  animation:blink 1s infinite;
+}
+
+@-webkit-keyframes blink {
+  0%,50%,100% {
+    opacity:1;
+  }
+
+  25%,75% {
+    opacity:0;
+  }
+}
+
+@keyframes blink {
+  0%,50%,100% {
+    opacity:1;
+  }
+
+  25%,75% {
+    opacity:0;
+  }
+}
+  </style>
+  <%= csrf_meta_tags %>
+  <link rel="canonical" href="jobs.html"/>
+  <link rel="shortcut icon" href="../assets.Framgia.com/production/assets/favicon-36a0e5df021b247a23c073e922ee76d2.png">
+  <link rel="apple-touch-icon" href="../assets.Framgia.com/production/assets/apple-touch-icon-38fe2e51027979e8c7034635f5dabeca.png" content="Framgia" />
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0" />
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46995268-2', 'framgia.vn');
+    ga('send', 'pageview');
+  </script>
+  <%= yield(:facebook_conversion) if content_for?(:facebook_conversion) %>
+</head>
+<div id="header" class="hidden-phone">
+  <div class="header-inner">
+    <h1 id="img-logo-box">
+    <a href="/"><%= image_tag 'logo_framgia.png', id: "img-logo-box" %></a>
+    </h1>
+    <div id="gnav-box">
+      <div class="header-btn-box">
+        <a href="<%= new_entry_path %>" class="btn btn-primary btn-alt ga-top-linkto-signup">Gửi CV</a>
+      </div>
+      <div class="header-menu-box hidden-phone">
+        <a href="<%= root_path %>#header-image-box" class="scroll">Lời Ngỏ</a>
+        <a href="<%= root_path %>#jobs-culture-container" class="scroll">Văn Hóa</a>
+        <a href="<%= root_path %>#jobs-team-container" class="scroll">Team</a>
+        <a href="<%= root_path %>#jobs-positions-container" class="scroll">Công Việc</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MENU MOBILE -->
+<div class="navbar navbar-fixed-top visible-phone" id="navbar-mobile">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" DATA-TOGGLE="collapse" DATA-TARGET=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a href="index.html" class="logo-box-small"></a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="jobs.html#header-image-box" class="scroll">Lời Ngỏ</a></li>
+          <li><a href="jobs.html#jobs-culture-container" class="scroll">Văn Hóa</a></li>
+          <li><a href="jobs.html#jobs-team-container" class="scroll">Team</a></li>
+          <li><a href="jobs.html#jobs-positions-container" class="scroll">Công Việc</a></li>
+        </ul>
+      </div>
+      <!-- /.nav-collapse --> 
+    </div>
+    <!-- /.container --> 
+  </div>
+  <!-- /.navbar-inner --> 
+</div>
+<body DATA-SPY="scroll" DATA-TARGET="#navbar">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '432816793580731',
+      xfbml      : true,
+      version    : 'v2.4'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<%= yield %>
+<div id="footer">
+  <div id="footer-inner"> 
+    <hr style="margin-top:0;"/>
+    <p class="pagination-centered">Framgia Viet Nam Co.,Ltd<br>
+13F, KeangNam LandMark 72 Building, E6 Pham Hung, Tu Liem, HN</p>
+    <p class="pagination-centered">Tel: 04 3795 5417</p>
+    <p class="pagination-centered">© 2014 Framgia, Inc. All rights reserved.</p>
+  </div>
+</div>
+<%= yield(:google_js) if content_for?(:google_js) %>
+</body>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

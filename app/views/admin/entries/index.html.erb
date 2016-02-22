@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>STT</th>
+    <th>Name</th>
+    <th>Job</th>
+  </tr>
+<% @entries.each_with_index do |entry, index| %>
+  <tr>
+    <td><%= index + 1 %></td>
+    <td><%= link_to entry.name, admin_entry_path(entry) %></td>
+    <td><%= entry.try(:m_job).try(:name) %></td>
+  </tr>
+<% end %>
+</table>
