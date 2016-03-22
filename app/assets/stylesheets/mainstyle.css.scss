@@ -14,7 +14,7 @@
 .new_position {
   color: red;
   font-size: 14px;
-  text-transform: capitalize;
+  text-transform: lowercase;
   text-align:center;
   font-family:Helvetica,sans-serif;
   padding-top:20px;
@@ -22,7 +22,6 @@
   -moz-animation-fill-mode:both;
   -o-animation-fill-mode:both;
   animation-fill-mode:both;
-
   -webkit-animation:blink 1s infinite;
   -moz-animation:blink 1s infinite;
   -o-animation:blink 1s infinite;
